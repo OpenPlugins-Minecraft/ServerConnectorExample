@@ -1,0 +1,6 @@
+main: me.indian.example.ServerConnectionExampleNukkit
+name: Example
+authors: [ IndianPL ]
+description: Example plugin
+version: '${project.version}'
+api: [ "1.0.14" ]

@@ -1,6 +1,9 @@
 main: me.indian.example.ServerConnectionExampleNukkit
-name: Example
+name: ServerConnectionExample
 authors: [ IndianPL ]
-description: Example plugin
+description: ServerConnectionExample plugin
 version: '${project.version}'
+depend:
+  - ServerConnect
+  - PlaceholderAPI
 api: [ "1.0.14" ]

@@ -16,7 +16,8 @@ public class ServerConnectionExampleNukkit extends PluginBase {
     @Override
     public void onEnable() {
         final PluginManager pluginManager = this.getServer().getPluginManager();
-        if (pluginManager.getPlugin("PlaceholderAPI") == null || pluginManager.getPlugin("KotlinLib") == null || pluginManager.getPlugin("ServerConnection") == null) {
+        if (pluginManager.getPlugin("PlaceholderAPI") == null || pluginManager.getPlugin("KotlinLib") == null || pluginManager.getPlugin("ServerConnect") == null) {
+            this.getLogger().critical(TextFormat.RED + "Not found needed plugin!!");
             pluginManager.disablePlugin(this);
             return;
         }
@@ -63,7 +64,7 @@ public class ServerConnectionExampleNukkit extends PluginBase {
                     .visitorLoader(entry -> cubecraft.getPlayers() + skyblock.getPlayers())
                     .build();
 
-            this.getLogger().info(TextFormat.GREEN + "Loaded placeholderapi placeholders");
+            this.getLogger().info(TextFormat.GREEN + "Loaded " +this.getDescription().getName() + " placeholders");
         } catch (final Exception exception) {
             this.getLogger().error(TextFormat.RED + "Loading placeholders failed ");
             exception.printStackTrace();

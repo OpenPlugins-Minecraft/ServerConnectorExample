@@ -31,10 +31,10 @@
 
         <dependency>
             <groupId>me.indian.connection</groupId>
-            <artifactId>ServerConnection</artifactId>
+            <artifactId>ServerConnect</artifactId>
             <version>1.0</version>
             <scope>system</scope>
-            <systemPath>${basedir}/libs/ServerConnection-1.0.jar</systemPath>
+            <systemPath>${basedir}/libs/ServerConnect-1.0.jar</systemPath>
         </dependency>
 
         <dependency>
